@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Source+Sans+Pro:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.sidebar{
+    position: absolute;
+    color: #8b4c4c;
+    background-color: #b4a8a8;
+    font-family: 'Koulen', cursive;
+    /* width: 400px; */
+    height: 100vh;
+ transition:transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 21px;
+    font-size: 34px;
+ 
+}
+.sidebar nav li{
+list-style: none;
+margin: 26px 1px;
+
+}
+.sidebar nav li a{
+text-decoration: none;
+color: black;
+
+}
+.sidebar nav li a:hover{
+color: rgb(233, 242, 246);
+cursor: pointer;
+}
+.main{
+    background-color: white;
+    font-family: 'Koulen', cursive;
+    width:90vw;
+}
+.container{
+    display: flex;
+}
+
+/* main container coding */
+.infoContainer{
+    /* background-color: #0000004a; */
+    /* background-color: #6b4982; */
+    width: 70vw;
+    height: 60vh;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-around;
+}
+/* Main container coding */
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.hello{
+    font-size: 5em;
+    
+}
+.name{
+    font-size: 4em;
+ font-weight: bold;
+ 
+ 
+}
+.about{
+    font-size: 3em;
+   
+}
+/* .buttons button{
+ width: 10vw;
+padding: 15px;
+} */
+.btn button{
+    margin-left: 200px;
+    margin-top: 26px;
+    padding: 8px;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: large;
+}
+.btn button:hover{
+  cursor: pointer;
+  background-color: lightgray;
+  /* font-weight: bold; */
+}
+.devPic img{
+    width: 279px;
+ } 
+  /*Contact form coding  */
+ .contactForm {
+    font-family: 'Source Sans Pro', sans-serif;
+   font-weight: bold;
+   padding-top: 135px;
+   padding: 0 34px;
+   margin-left: 179px;
+ }
+ .contactForm h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+.contactForm form div{
+    padding: 18px 0;
+    margin-top: 13px;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+ border-radius: 14px;
+}
+.contactForm form div input{
+  margin: 6px 0px;
+  border-radius: 16px;
+  padding: 11px;
+}
+#emailHelp{
+    font-size: 10px;
+    color: rgb(29 149 189);
+}
+#checkBox{
+    width: 2vw;
+
+}
+.contactForm  button{
+    width: 15vw;
+   text-align: center;
+   padding: 5px;
+   border-radius: 15px;
+   font-weight: bold;
+}
+ /* .contactForm button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    color: red; 
+}   */
+#form-check{
+flex-direction: row;
+}
+
+/* Blog section coding */
+.blogItems{
+    margin: 16px 211px;
+      
+} 
+.blogContainer h1{
+    
+
+   justify-content: center;
+   margin: 34px 200px;
+} 
+.blogItems p{
+ font-family: 'Source Sans Pro', sans-serif;
+ font-weight: 800;
+ color: rgb(124, 124, 230);
+}
+/* Intro section Coding */
+.intro h2{
+ font-family: 'Source Sans Pro', sans-serif;
+margin: 28px 175px;
+}
+.intro p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px 169px;
+}
+.skillContainer{
+    padding: 12px;
+    margin: 0px 175px;
+}
+.skillItem{
+    display: flex;
+    /* align-items: center; */
+}
+.skill{
+    height: 6px;
+    width: 200px;
+    background-color: red;
+    border-radius: 2px;
+    margin: 9px 14px;
+    border: 1px solid black;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.eightyPrecent{
+   
+   background-color: red;
+}
+.seventyPrecent{
+     width: 126px;
+    background-color: green;
+}
+.sixtyPrecent{
+    width: 130px;
+background-color: yellow;
+}
+/* Side baar hide /open */
+.sidebarGo{
+     transform: translate(-411px, 0px);
+        position :absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+position: absolute;
+left: 7vw;
+}
+@media (max-width:949px) {
+/* *{
+    background-color: rgb(233, 150, 150);
+} */
+/* .sidebar{
+    transform: translate(-411px, 0px);
+    position :absolute;
+} */
+.devPic{
+    display: none;
+}
+.cross{
+    margin-left: 55px;
+}
+.intro,.contactForm,.devInfo{
+    margin: 8px;
+}
+}

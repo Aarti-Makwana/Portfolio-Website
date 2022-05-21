@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="/portfolio.html">Home</a></li>
+                    <li><a href="/intro.html">My intro</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/Contect.html">Contect</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="cross" src="cross.jpg" alt="" width="25px">
+                <img class="ham" src="hamburger.png" alt="" width="25px">
+            </div>
+            <div class="contactForm">
+                <h1>Contect me for work/genral Enquiries</h1>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="clientName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="clientName" placeholder="Enter Your Name">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp"
+                            placeholder="Enter Your Email">
+                        <div id="emailHelp" class="form-text">We'll never share your email and phone with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientPhone" class="form-label">phone Number</label>
+                        <input type="phone" class="form-control" id="clientPhone" placeholder="Enter Your Phone Number">
+                    </div>
+                    <div class="mb-3" id="form-check"></div>
+                    <input type="checkbox" class="form-check-input" id="checkBox">
+                    <label class="form-check-label" for="checkBox">I want you to work on a project with me</label>
+            </div>
+            <div class="btn">
+                <button type="submit" class="btn btn-primary ">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
